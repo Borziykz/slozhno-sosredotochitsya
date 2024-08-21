@@ -12,20 +12,20 @@
 }
 
 :root.theme-light {
-  --main-color:#353430;
-  --accent-color:#FF8DCB;
-  --bg-color: #FFF1F7;
-  --main-font: 'IBM Plex mono';   
+  --main-color: #353430;
+  --accent-color: #ff8dcb;
+  --bg-color: #fff1f7;
+  --main-font: "IBM Plex mono";
 }
 
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-color:#353430;
-    --accent-color:#FF8DCB;
-    --bg-color: #FFF1F7;
-    --main-font: 'IBM Plex mono';   
-    }
+    --main-color: #353430;
+    --accent-color: #ff8dcb;
+    --bg-color: #fff1f7;
+    --main-font: "IBM Plex mono";
+  }
 }
 /* Остальные стили */
