@@ -8,8 +8,12 @@
 
 body {
   min-inline-size: 375px;
-  max-inline-size: 1440px;
+  max-inline-size: 1024px;
   margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
 }
 
 h1,
@@ -18,11 +22,12 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+blockquote {
   margin: 0;
 }
 
-ul {
+ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
