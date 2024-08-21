@@ -8,6 +8,7 @@ body{
   padding: 0;
   background-color: var(--bg-color);
   font-family: var(--main-font);
+  background-attachment: fixed;
 }
 
 .header__bg{
@@ -32,7 +33,6 @@ body{
 
 .header__bg::after{
   right: 20px;
-  top: 20px;
   border-block-end:0px;
   border-inline-start:0px ;
 }
@@ -48,6 +48,11 @@ header{
   position: relative;
   display: flex;
   margin-block-start: 20px;
+  height: 100vh;
+}
+
+.decorated-zone{
+  display: flex;
 }
 
 .header__theme-menu{
@@ -92,7 +97,7 @@ header{
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  right: 28px;
+  right: 48px;
   
 }
 
