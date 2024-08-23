@@ -5,8 +5,16 @@
 */
 
 .page.theme_dark {
-  --main-color: #f1b2ce;
-  --accent-color: #ff0070;
+  --main-color:#F1B2CE;
+  --accent-color:#FF0070;
   --bg-color: #000028;
-  --main-font: "IBM Plex mono";
+  --main-font: 'IBM Plex mono';
 }
+
+
+/* 
+черный
+
+нав ассент
+
+*/

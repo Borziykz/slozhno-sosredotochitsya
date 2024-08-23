@@ -5,26 +5,28 @@
 }
 
 body {
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0;
   background-color: var(--bg-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   background-attachment: fixed;
 }
 
 .header__bg {
-  background-image: url(/images/cover-image-dark.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   position: relative;
-  height: 768px;
+  min-height: 668px;
   grid-template-rows: repeat(3, 1fr);
   padding-inline-end: 20px;
 }
 
 .header__bg::after,
-.header__bg::before {
+.header__bg::before,
+.footer::after,
+.footer::before  {
   content: "";
   position: absolute;
   width: 25px;
@@ -34,6 +36,7 @@ body {
 
 .header__bg::after {
   right: 20px;
+  top: 20px;
   border-block-end: 0px;
   border-inline-start: 0px;
 }
@@ -48,17 +51,17 @@ body {
 header {
   position: relative;
   display: flex;
-  margin-block-start: 20px;
   height: 100vh;
 }
 
 .decorated-zone {
   display: flex;
+  margin-block-start: 20px;
 }
 
 .header__theme-menu {
   margin: 0 auto;
-  padding-inline-start: 20px;
+  padding-inline-start: 83px;
 }
 
 .header__theme-menu-list {
@@ -75,7 +78,7 @@ header {
   border: none;
   cursor: pointer;
   text-transform: lowercase;
-  font-family: var(--main-font);
+  font-family: var(--main-font) sans-serif;
   padding: 3.5px 13px;
   font-size: 18px;
   font-weight: 400;
@@ -84,7 +87,7 @@ header {
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid currentColor;
 }
 
 .header__theme-menu-item {
@@ -92,12 +95,11 @@ header {
 }
 
 .theme__dark-subtext {
-  position: absolute;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  right: 48px;
+  margin-right: 28px;
 }
 
 .theme__dark-subtext::after {
@@ -123,7 +125,7 @@ header {
 }
 
 .title_decor {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 #FF0070;
 }
 
 .header__title-blockquote {
@@ -173,7 +175,7 @@ header {
 
 .card_subtitle {
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
 }
@@ -269,7 +271,8 @@ header {
 }
 
 .footer {
-  height: 768px;
+  min-height: 668px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,16 +280,11 @@ header {
 }
 
 .footer .title_decor {
-  text-shadow: 2px 2px var(--accent-color);
+  text-shadow: 2px 2px #FF0070;
 }
 
-.footer::after,
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border: 1px solid var(--accent-color);
+.methods__card_title{
+  font-weight: 400;
 }
 
 .footer::after {
@@ -307,13 +305,29 @@ header {
   border-bottom: 1px solid currentColor;
 }
 
+.link:focus-visible{
+  outline: 1px solid currentColor;
+}
+
+.header__theme-menu-button:hover{
+  border: 1px solid currentColor;
+}
+
+.header__theme-menu-button:focus-visible{
+  border-bottom: 1px solid currentColor;
+  outline: none;
+}
+
+.header__theme-menu-button_active:focus-visible{
+  border-bottom: none;
+}
+
 .link {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (max-width: 768px) {
   .header__bg {
-    height: 1024px;
     padding-inline-end: 20px;
   }
 
@@ -321,6 +335,21 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 192px 230px 318px;
     gap: 20px;
+  }
+
+  .decorated-zone{
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .theme_light .decorated-zone{
+    flex-direction: row;
+    justify-self: flex-end;
+  }
+
+  .theme__dark-subtext{
+    order: 0;
+    align-self: flex-end;
   }
 
   .header__theme-menu-list {
@@ -333,6 +362,7 @@ header {
   .header__theme-menu {
     margin: 0;
     align-self: flex-end;
+    order: 1;
   }
 
   .header {
@@ -371,7 +401,6 @@ header {
 
 @media (max-width: 376px) {
   .header__bg {
-    height: 668px;
     padding: 0 10px;
   }
 
@@ -437,9 +466,6 @@ header {
     gap: 10px;
   }
 
-  .footer {
-    height: 668px;
-  }
 
   .theme__dark-subtext {
     top: -10px;
