@@ -26,7 +26,7 @@ body {
 .header__bg::after,
 .header__bg::before,
 .footer::after,
-.footer::before  {
+.footer::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -125,7 +125,7 @@ header {
 }
 
 .title_decor {
-  text-shadow: 4px 4px 0 #FF0070;
+  text-shadow: 4px 4px 0 #ff0070;
 }
 
 .header__title-blockquote {
@@ -280,10 +280,10 @@ header {
 }
 
 .footer .title_decor {
-  text-shadow: 2px 2px #FF0070;
+  text-shadow: 2px 2px #ff0070;
 }
 
-.methods__card_title{
+.methods__card_title {
   font-weight: 400;
 }
 
@@ -305,20 +305,20 @@ header {
   border-bottom: 1px solid currentColor;
 }
 
-.link:focus-visible{
+.link:focus-visible {
   outline: 1px solid currentColor;
 }
 
-.header__theme-menu-button:hover{
+.header__theme-menu-button:hover {
   border: 1px solid currentColor;
 }
 
-.header__theme-menu-button:focus-visible{
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid currentColor;
   outline: none;
 }
 
-.header__theme-menu-button_active:focus-visible{
+.header__theme-menu-button_active:focus-visible {
   border-bottom: none;
 }
 
@@ -337,17 +337,17 @@ header {
     gap: 20px;
   }
 
-  .decorated-zone{
+  .decorated-zone {
     justify-content: space-between;
     flex-direction: column;
   }
 
-  .theme_light .decorated-zone{
+  .theme_light .decorated-zone {
     flex-direction: row;
     justify-self: flex-end;
   }
 
-  .theme__dark-subtext{
+  .theme__dark-subtext {
     order: 0;
     align-self: flex-end;
   }
@@ -466,7 +466,6 @@ header {
     gap: 10px;
   }
 
-
   .theme__dark-subtext {
     top: -10px;
   }
@@ -484,7 +483,6 @@ header {
   }
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
     --main-color: #353430;
@@ -493,15 +491,15 @@ header {
     --main-font: "IBM Plex mono";
   }
 
-  body.theme_auto{
+  body.theme_auto {
     background-image: url(../images/cover-image-light.png);
   }
 
-  .theme_auto .theme__dark-subtext{
+  .theme_auto .theme__dark-subtext {
     display: none;
   }
 
-  .theme_auto .header__title{
-    color: #FFC2E6;
+  .theme_auto .header__title {
+    color: #ffc2e6;
   }
 }

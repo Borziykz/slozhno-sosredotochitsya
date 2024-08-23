@@ -8,33 +8,32 @@
   background-image: url(../images/cover-image-light.png);
 }
 
-.theme_light .theme__dark-subtext{
+.theme_light .theme__dark-subtext {
   display: none;
 }
 
 :root.theme-light {
   --main-color: #353430;
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --bg-color: #353430;
   --main-font: "IBM Plex mono";
 }
 
-.theme_light .header__theme-menu-button{
+.theme_light .header__theme-menu-button {
   color: var(--main-color);
 }
 
-.theme_light .header__title{
-  color: #FFC2E6;
+.theme_light .header__title {
+  color: #ffc2e6;
 }
 
-.theme_light .header__theme-menu{
+.theme_light .header__theme-menu {
   padding-inline-start: 20px;
 }
 
-.theme_light .main__title{
+.theme_light .main__title {
   color: var(--main-color);
 }
-
 
 /* Остальные стили */
 
@@ -46,7 +45,7 @@
     --main-font: "IBM Plex mono";
   }
 
-  body{
+  body {
     background-image: url(../images/cover-image-light.png);
   }
 }
