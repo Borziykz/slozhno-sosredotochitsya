@@ -502,4 +502,16 @@ header {
   .theme_auto .header__title {
     color: #ffc2e6;
   }
+
+  .theme_auto .header__theme-menu{
+    padding-inline-start: 20px;
+  }
+
+  .theme_auto .header__theme-menu-button {
+    color: var(--main-color);
+  }
+
+  .theme_auto .main__title {
+    color: var(--main-color);
+  }
 }
