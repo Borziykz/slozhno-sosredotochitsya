@@ -35,6 +35,7 @@
   color: var(--main-color);
 }
 
+
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {

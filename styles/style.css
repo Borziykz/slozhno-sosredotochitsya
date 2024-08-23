@@ -483,3 +483,25 @@ header {
     bottom: 10px;
   }
 }
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: #353430;
+    --accent-color: #ff8dcb;
+    --bg-color: #353430;
+    --main-font: "IBM Plex mono";
+  }
+
+  body.theme_auto{
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .theme_auto .theme__dark-subtext{
+    display: none;
+  }
+
+  .theme_auto .header__title{
+    color: #FFC2E6;
+  }
+}
