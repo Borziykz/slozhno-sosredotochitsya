@@ -7,8 +7,16 @@
 .page.theme_dark {
   --main-color: #f1b2ce;
   --accent-color: #ff0070;
+  --bg-theme-img: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --main-font: "IBM Plex mono";
+  --header-title-color: #db00ff;
+  --header-theme-menu-padding: 83px;
+  --header-menu-button-color: #ff0070;
+  --main-title-color: #ff0070;
+  --rec-display:block;
+  --border-menu-button-opacity:1px solid #FF007066;
+  --header-menu-position: none;
 }
 
 /* 
